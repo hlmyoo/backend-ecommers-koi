@@ -48,7 +48,7 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', $_ENV['MYSQLHOST'] ?? '127.0.0.1'),
             'port' => env('DB_PORT', $_ENV['MYSQLPORT'] ?? '3306'),
-            'database' => env('DB_DATABASE', $_ENV['MYSQLDATABASE'] ?? 'forge'),
+            'database' => env('DB_DATABASE', $_ENV['MYSQLDATABASE']),
             'username' => env('DB_USERNAME', $_ENV['MYSQLUSER'] ?? 'forge'),
             'password' => env('DB_PASSWORD', $_ENV['MYSQLPASSWORD'] ?? ''),
             'unix_socket' => env('DB_SOCKET', ''),
